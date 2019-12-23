@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+
+
+<body>
+<div class="container">
+    <form>
+            <div class="form-row">
+
+                <div class="form-group col-md-12">
+                        {{form.admin.label_tag}}
+                        {{form.admin}}
+                </div>
+
+            <div class="form-group col-md-6">
+               {{form.email.label_tag}}
+               {{form.email}}
+            </div>
+                
+            <div class="form-group col-md-6">
+                {{form.password.label_tag}}
+                {{form.password}}
+            </div>
+        </div>
+                
+        <div class="form-group">
+               {{form.address.label_tag}}
+               {{form.address}}
+        </div>
+                
+        <div class="form-group">
+                {{form.address_2.label_tag}}
+                {{form.address_2}} 
+        </div>
+                
+    <div class="form-row">
+                
+        <div class="form-group col-md-6">
+                {{form.city.label_tag}}
+                {{form.city}}
+        </div>
+                
+        <div class="form-group col-md-4">
+                {{form.state.label_tag}}
+                {{form.state}}
+        </div>
+                
+        <div class="form-group col-md-2">
+                {{form.zip.label_tag}}
+                {{form.zip}}
+         </div>
+    </div>
+                
+        <div class="form-group">
+                
+                       
+        <div class="form-check">
+         {{form.check}}
+         {{form.check.label_tag}}
+        </div>
+        </div>
+                
+        <button type="submit" class="btn btn-primary">Sign in</button>
+                
+                </form>
+</div>
+                
+</body>
+
+
+
+</html>
